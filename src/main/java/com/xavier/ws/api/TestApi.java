@@ -26,7 +26,6 @@ public class TestApi {
 
 	@GetMapping(path = "websv")
 	public String websv() {
-		//http://<前置机IP>/ws/query/data
 		System.out.println("GetIn");
 		String webUrl = "http://192.168.20.10:8080/dataexchange/ws/query/attachment?wsdl";
 		String methodName = "run";
