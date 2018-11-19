@@ -1,4 +1,4 @@
-package com.xavier.ws.client;
+package com.xavier.ws.suport;
 
 
 import lombok.Getter;

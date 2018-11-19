@@ -1,4 +1,4 @@
-package com.xavier.ws.client.out;
+package com.xavier.ws.out;
 
 import org.springframework.stereotype.Service;
 
@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
-import java.util.StringJoiner;
+//import java.util.StringJoiner;
 
 @Service
 public class ToFile {
@@ -17,7 +17,7 @@ public class ToFile {
 
 	private String newLine = System.getProperty("line.separator");
 
-	public void test(List<Map<String, Object>> mapList) throws IOException {
+	public void date2File(List<Map<String, Object>> mapList) throws IOException {
 		Path rootLocation = Paths.get(fileFolder);
 		if (Files.notExists(rootLocation)) {
 			Files.createDirectories(rootLocation);
@@ -32,7 +32,7 @@ public class ToFile {
 
 	private String dataConvert(List<Map<String, Object>> mapList) {
 		CharSequence lineDelimiter = newLine;
-		CharSequence prefix = "";
+		/*CharSequence prefix = "";
 		CharSequence suffix = "";
 		StringJoiner result = new StringJoiner(lineDelimiter, prefix, suffix);
 		for (Map<String, Object> it : mapList) {
@@ -47,6 +47,7 @@ public class ToFile {
 			}
 			result.add(line.toString());
 		}
-		return result.toString();
+		return result.toString();*/
+		return "";
 	}
 }
