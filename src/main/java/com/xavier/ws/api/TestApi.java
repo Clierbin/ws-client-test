@@ -17,12 +17,6 @@ import java.util.Map;
 @RestController
 @RequestMapping(path = "/")
 public class TestApi {
-
-	/*@Autowired
-	private QueryOracle queryOracle;
-	@Autowired
-	private ToFile toFile;*/
-
 	@Autowired
 	@Qualifier(value = "toWeb")
 	private ToWebSV toWebSV;
